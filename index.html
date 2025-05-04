@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.box{
+				width: 100px;
+				height: 120px;
+				margin: 0 auto;
+				margin-top: 300px;
+			}
+			button{
+				border: none;
+				border-radius: 50px;
+				background-color: #fff;
+			}
+			img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+			}
+			span{
+				display: none;
+				font-size: 20px;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<button><img src="img/头像.png" alt="点击进入"><span>点击进入</span></button>
+		</div>
+		<script>
+			document.querySelector("button").addEventListener("mouseenter",function(){
+				document.querySelector("span").style.display="block"
+			})
+			document.querySelector("button").addEventListener("mouseleave",function(){
+				document.querySelector("span").style.display="none"
+			})
+			document.querySelector("button").addEventListener("click",function(){
+				window.open("子页面/首页.html","_blank")
+			})
+		</script>
+	</body>
+</html>

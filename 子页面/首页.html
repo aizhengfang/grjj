@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				background-color: #f0f0f0;
+			}
+			.box{
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+			}
+			.head{
+				margin: 0 auto;
+				display: flex;
+				padding: 20px;
+				background-color: #fff;
+				width: 70%;
+				border-radius: 30px;
+			}
+			.js{
+				margin-left: 20px;
+			}
+			.head img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+			}
+			.ry{
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #fff;
+				width: 70%;
+				border-radius: 30px;
+				margin-top: 20px;
+			}
+			.future{
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #fff;
+				width: 70%;
+				border-radius: 30px;
+				margin-top: 20px;
+			}
+			.language{
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #fff;
+				width: 70%;
+				border-radius: 30px;
+				margin-top: 20px;
+			}
+			.las{
+				display: flex;
+				padding-top: 20px;
+			}
+			.las button{
+				width: 400px;
+				line-height: 100px;
+				margin-right: 30px;
+				background-color: #f0f0f0;
+				border: none;
+				position: relative;
+			}
+			.las button img{
+				width: 40px;
+				height: 40px;
+				background-color: #f0f0f0;
+				position: absolute;
+				top: 30px;
+				left: 80px;
+			}
+			.text{
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #fff;
+				width: 70%;
+				border-radius: 30px;
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+			}
+			.text .pl{
+				display: flex;
+			}
+			.text .pl textarea{
+				width: 1150px;
+				border-radius: 30px;
+				margin-top: 20px;
+				padding-top: 15px;
+				padding-left: 15px;
+			}
+			.text .pl button{
+				width: 100px;
+				border-radius: 30px;
+				line-height: 50px;
+				background-color: #f0f0f0;
+				border: none;
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="mokuai">
+				<div class="head">
+					<img src="../img/头像.png" alt="" />
+					<div class="js">
+						<h1>艾正方</h1>
+						<p>学生</p>
+						<p>我是一名来自中策钱塘的学生，正在学习HTML、CSS、Java、Python等技术技能。</p>
+					</div>
+				</div>
+				<div class="language">
+					<h1>各类技能学习经历与心得</h1>
+					<div class="las">
+						<button class="HTML"><img src="../img/html.jpg">HTML</button>
+						<button class="CSS"><img src="../img/css.jpg">CSS</button>
+						<button class="Java"><img src="../img/java.jpg">Java</button>
+						<button class="Python"><img src="../img/python.jpg">Python</button>
+					</div>
+				</div>
+			</div>
+			<div class="ry">
+				<h1>荣誉</h1>
+				<p><a href="one.html" target="_blank">浙江省第四届（2023-2024学年）全国青少年科技教育成果展示大赛三等奖</a></p>
+				<p><a href="two.html" target="_blank">杭州市AI运算试图竞赛三等奖</a></p>
+			</div>
+			<div class="future">
+				<h1>未来发展方向</h1>
+				<p>结合大数据和前端技术，将复杂的数据以直观、美观且交互性强的方式呈现出来。
+				可以使用 HTML、CSS、JavaScript 框架（如 React、Vue.js）开发数据可视化界面，
+				同时利用 Python 的数据分析库（如 Pandas、Matplotlib）进行数据处理和初步的可视化分析。
+				可以成为大数据可视化工程师，服务于金融、医疗、电商等行业，帮助企业更好地理解和展示数据。</p>
+			</div>
+			<div class="text">
+				<h1>评论</h1>
+				<div class="pl">
+					<textarea placeholder="善语结善缘,恶言伤人心"></textarea>
+					<button type="submit" class="fas">发送</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			document.querySelector(".HTML").addEventListener("click",function(){
+				window.open("HTML.html")
+			})
+			document.querySelector(".CSS").addEventListener("click",function(){
+				window.open("css.html")
+			})
+			document.querySelector(".Java").addEventListener("click",function(){
+				window.open("Java.html")
+			})
+			document.querySelector(".Python").addEventListener("click",function(){
+				window.open("Python.html","_blank")
+			})
+			document.querySelector(".fas").addEventListener("click",function(){
+				document.querySelector("textarea").value=""
+				alert("评论成功")
+			})	
+		</script>
+	</body>
+</html>
